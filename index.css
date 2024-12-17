@@ -1,0 +1,236 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #3543e3;
+    color: #fff;
+  }
+  
+  .navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar .nav-links li {
+    margin: 0 10px;
+  }
+  
+  .navbar .nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar .nav-links a:hover {
+    background-color: #555;
+    border-radius: 4px;
+  }
+  
+  /* Toggle Button */
+  .navbar .toggle-btn {
+    display: none;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .navbar .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #444;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      text-align: center;
+    }
+  
+    .navbar .nav-links.active {
+      display: flex;
+    }
+  
+    .navbar .nav-links li {
+      margin: 10px 0;
+    }
+  
+    .navbar .toggle-btn {
+      display: block;
+    }
+  }
+
+/* intro section */
+.intro{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.intro-text{
+    margin-top: 60px;
+}
+.intro .we{
+    color: white;
+    background-color: #ffffff;
+    text-shadow: -1px -1px 0  #3543e3, 1px -1px 0 #3543e3, -1px 1px 0 #3543e3, 1px 1px 0 #3543e3;
+    font-size: 40px;
+}
+
+ .space{
+    color: #3543e3;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.intro p{
+    border-left: 5px solid orange;
+    font-size: 15px;
+    padding: 3px;
+}
+.ora{
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+.ora:hover{
+    background-color: rgb(233, 152, 3);
+}
+@media screen and (max-width: 768px){
+    .intro{
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+    
+}
+/* service section*/
+.services {
+    height: 450px;
+    padding: 2rem;
+    text-align: center;
+    background-color: #eaeaea;
+}
+.s-i{
+    display: flex;
+    justify-content: space-evenly;
+}
+.s-i1{
+    display: none;
+}
+.services img{
+    width: 100px;
+}
+.services h2 {
+    font-size: 50px;
+    margin-bottom: 1rem;
+}
+.services h2 span{
+    border-bottom: 5px solid #3543e3;
+}
+.service-item {
+    margin: 1rem 0;
+    background-color: #fff;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 1px rgb(147, 147, 147);
+    margin-top: 70px;
+}
+@media screen and (max-width: 768px){
+    .services{
+        height: 70%;
+    .s-i{
+        display: none;
+    }
+    .s-i1{
+        display: flex;
+        justify-content: center;
+    }
+}
+}
+/* experience section*/
+.experience{
+    background-color: white;
+    
+}
+.check{
+    margin-left: 100px;
+}
+.checks{
+    margin-left: 100px;
+    border-bottom: 5px solid orange;
+}
+@media screen and (max-width: 768px){
+    .check{
+        margin-left: 18%;
+    }
+    .checks{
+        margin-left: 18%;
+    }
+}
+ /*form section*/
+.form-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+.form-container{
+    margin-top: 20px;
+    background-color: #f3f3f3;
+    
+}
+form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+form input, form select, form textarea {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+form button {
+    padding: 0.8rem;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+form button:hover {
+    background-color: #555;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    height: 50px;
+}
